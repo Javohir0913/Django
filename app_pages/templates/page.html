@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page {{ page_number }}</title>
+</head>
+<body>
+    <h1>Page {{ page_number }}</h1>
+    {% if prev_page %}
+        <a href="http://localhost:8000/page/{{ prev_page }}">orqaga</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    {% endif %}
+    {% if next_page %}
+        <a href="http://localhost:8000/page/{{ next_page }}">oldinga</a>
+    {% endif %}
+</body>
+</html>
